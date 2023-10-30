@@ -8,29 +8,11 @@
 <body>
   <h1>OLFA KACEM - Task 1</h1>
   <h2>My code:</h2>
-  <p id="code" class="block">
-    <code>
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Olfa Kacem - Task 1</title>
-      </head>
-      <body>
-        <h1>OLFA KACEM - Task 1</h1>
-        <h2>My code:</h2>
-        <p id="code" class="block"></p>
-        <h2>Results of my code:</h2>
-        <div id="results" class="block"></div>
-      </body>
-      </html>
-    </code>
-  </p>
+  <p id="code" class="block"></p>
   <h2>Results of my code:</h2>
   <div id="results" class="block"></div>
 
-  <script>
+  <script id="task_id">
     let data = [
       {"page_id": 6682420, "creation_date": "2021-09-13", "title": "André Baniwa"},
       {"page_id": 4246775, "creation_date": "2013-12-10", "title": "Benki Piyãko"},
@@ -62,6 +44,9 @@
       // Append the paragraph to the results element
       resultsElement.appendChild(paragraph);
     });
+  </script>
+  <script>
+            document.getElementById("code").innerText = document.getElementById("task_id").text;
   </script>
 </body>
 </html>
